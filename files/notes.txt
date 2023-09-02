@@ -48,3 +48,18 @@
     border: 1px solid #ccc;
     margin: 10px;
 }
+
+
+
+<div class="container-inside-one-vertical-contant" style="background-color: purple;">
+          <h1>Jagateesvaran</h1>
+          <p>Create Software that help people</p>
+          
+          <div class="contact-me">
+            <p>Contact Me</p>
+            <a href="https://www.linkedin.com/in/jagatees/"><span>Linkedin</span></a>
+            <a href="https://github.com/Jagatees"><span>Github</span></a>
+            <a href="https://www.instagram.com/jagatees_3k/"><span>Instagram</span></a>
+            <a href="https://leetcode.com/Jagatees/"><span>LeetCode</span></a>
+          </div>
+        </div>   
