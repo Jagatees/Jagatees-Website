@@ -69,7 +69,6 @@ body, ul, li {
 
 /* Education Journey */
 .title-container {
-  background-color: blue;
   text-align: center;
   display: flex;
   align-items: center;
@@ -78,7 +77,6 @@ body, ul, li {
 }
 
 .card-container {
-  background-color: red;
   padding: 20px; /* Add spacing around cards */
 }
 
@@ -150,3 +148,6 @@ footer {
   background-color: DarkSalmon;
   color: white;
 }
+
+
+
