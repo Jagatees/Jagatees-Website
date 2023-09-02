@@ -25,3 +25,43 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  /* title */
+
+  /* Center the title div and make it bigger */
+  .title {
+    text-align: center;
+    padding: 20px; /* Add some spacing around the title */
+    background-color: #3498db; /* Set the background color to blue (you can change the color code) */
+    }
+
+  .title h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+
+
+ /* Define a grid container */
+ .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+/* Style for each card */
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style for the button */
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

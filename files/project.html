@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <!-- Link to home.css  -->
-     <link rel="stylesheet" href="project.css">
-     <title>Document</title>
-     <!-- Nav Bar  -->
-     <ul>
-       <li><a href="home.html">Home</a></li>
-       <li><a href="project.html">Project</a></li>
-       <li><a href="blog.html">Blog</a></li>
-     </ul>
-</head>
-<body>
-   
-</body>
+    <!-- Link to home.css  -->
+    <link rel="stylesheet" href="project.css" />
+    <script src="projet.js"></script>
+    <title>Document</title>
+    <!-- Nav Bar  -->
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </head>
+  <body>
+
+    <div class="title">
+        <h1>Your Title Here</h1>
+      </div>
+    
+      <div class="filter">
+        <button onclick="filterCards('all')">All</button>
+        <button onclick="filterCards('tag1')">Tag 1</button>
+        <button onclick="filterCards('tag2')">Tag 2</button>
+        <!-- Add more filter buttons as needed -->
+      </div>
+    
+      <div class="card-grid">
+        <!-- Card 1 with tags -->
+        <div class="card" data-tags="tag1">
+          <img src="images/image.jpg" width="100" height="100">
+          <h2>[Project Name tag 1]</h2>
+          <p>[Project Description]</p>
+          <button class="card-button">More</button>
+        </div>
+    
+        <!-- Card 2 with different tags -->
+        <div class="card" data-tags="tag2">
+          <img src="images/image.jpg" width="100" height="100">
+          <h2>[Project Name tag 2]</h2>
+          <p>[Project Description]</p>
+          <button class="card-button">More</button>
+        </div>
+    
+        <!-- Add more cards here with appropriate data-tags -->
+      </div>
+  </body>
 </html>

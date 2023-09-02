@@ -1,0 +1,50 @@
+  <!-- Sample contier for both side  -->
+    <div class="red-section">
+        <!-- Your content for the red section goes here -->
+        <h2>Red Section</h2>
+        <p>This is the red section with a red background.</p>
+    </div>
+
+      /* Section */
+  .red-section {
+    background-color: red;
+    padding: 20px;
+    color: white;
+}
+
+    <div class="container">
+        <div class="box">
+            <!-- Content for the first div -->
+            <h2>Div 1</h2>
+            <p>This is the content of Div 1.</p>
+        </div>
+
+        <div class="box">
+            <!-- Content for the second div -->
+            <h2>Div 2</h2>
+            <p>This is the content of Div 2.</p>
+        </div>
+
+        <div class="box">
+            <!-- Content for the third div -->
+            <h2>Div 3</h2>
+            <p>This is the content of Div 3.</p>
+        </div>
+    </div>
+
+
+/* container  */
+
+ /* Style for the container section */
+ .container {
+    display: flex; /* Use flexbox to arrange the divs side by side */
+    justify-content: space-between; /* Space them evenly */
+}
+
+/* Style for each individual div */
+.box {
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
