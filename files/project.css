@@ -1,0 +1,27 @@
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around; /* Center items and add equal spacing */
+    align-items: center;
+  }
+  
+  li {
+    float: none; /* Remove float */
+    text-align: center; /* Center text within list items */
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }

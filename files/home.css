@@ -122,3 +122,11 @@ li a:hover {
   text-align: center; /* Center-align text */
   margin: 0 auto; /* Center the container horizontally */
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
