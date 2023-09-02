@@ -78,7 +78,7 @@ li a:hover {
     display: block;
     width: 100px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
-    background-image: url('images/image.jpg'); /* Replace with the URL of your logo image */
+    background-image: url('../images/image.jpg'); /* Replace with the URL of your logo image */
     background-size: cover;
     background-repeat: no-repeat;
     text-indent: -9999px; /* Hide the text content */

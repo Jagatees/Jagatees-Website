@@ -65,3 +65,11 @@ ul {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* container */
+
+.container {
+    text-align: center; /* Center the contents horizontally */
+    background-color: #f0f0f0; /* Set the background color */
+    padding: 20px; /* Add some padding for spacing */
+  }
