@@ -3,85 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to home.css  -->
     <link rel="stylesheet" href="../home/home.css">
     <title>Document</title>
-    <!-- Nav Bar  -->
-    <ul>
-      <li><a href="../home/home.html">Home</a></li>
-      <li><a href="../project/project.html">Project</a></li>
-      <li><a href="../blog/blog.html">Blog</a></li>
-    </ul>
 </head>
 <body>
-    <!-- About Me Container -->
-    <div class="container" style="background-color: black;"> 
-      <!-- Left Side -->
-      <div class="container" style="background-color: green;"">
-        <!-- Profile Image -->
-        <img src="../images/image_of_me-PhotoRoom.png" alt="Color Image" height="800" width="600">
-      </div>   
-        <!-- Right Side -->
-        <div class="yellow-container" style="background-color: purple;"">
-          <!-- Contact me -->
-          <div class="contact-me">
-            <h1>Jagateesvaran</h1>
-            <p>Keep Moving Forward</p>
-            <p>Contact Me</p>
-            <a href="https://www.linkedin.com/in/jagatees/">
-              <img src="../images/LinkedIn_logo_initials.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/Jagatees">
-              <img src="../images/Octicons-mark-github.svg.png" alt="GitHub">
-            </a>
-            <a href="https://www.instagram.com/jagatees_3k/">
-              <img src="../images/modern-badge-logo-instagram-icon_578229-124.avif" alt="Instagram">
-            </a>
-            <a href="https://leetcode.com/Jagatees/">
-              <img src="../images/LeetCode_logo_black.png" alt="LeetCode">
-            </a>
-          </div>
-        </div>   
-    </div>
+    <header>
+        <!-- Navigation Bar -->
+        <ul class="nav-bar">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../project/project.html">Project</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+        </ul>
+    </header>
 
+    <!-- About Me Container -->
+    <main class="container" style="background-color: aqua;">
+        <!-- Left Side -->
+        <div class="profile-container">
+            <!-- Profile Image -->
+            <img src="../images/image_of_me-PhotoRoom.png" alt="Color Image">
+        </div>
+        <!-- Right Side -->
+        <div class="info-container">
+            <!-- Contact me -->
+            <div class="contact-me">
+              <h1 style="font-size: 28px; margin-bottom: 10px;">Jagateesvaran</h1>
+              <p style="font-size: 18px; margin-bottom: 10px;">Keep Moving Forward</p>
+              <br><br>
+              <!-- <p style="font-size: 18px; margin-bottom: 10px;">Contact Me</p> -->
+                <a href="https://www.linkedin.com/in/jagatees/" target="_blank">
+                    <img src="../images/LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Jagatees" target="_blank">
+                    <img src="../images/Octicons-mark-github.svg.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/jagatees_3k/" target="_blank">
+                    <img src="../images/modern-badge-logo-instagram-icon_578229-124.avif" alt="Instagram">
+                </a>
+                <a href="https://leetcode.com/Jagatees/" target="_blank">
+                    <img src="../images/LeetCode_logo_black.png" alt="LeetCode">
+                </a>
+            </div>
+        </div>
+    </main>
 
     <!-- Education Journey -->
-    <div class="Vetical-Container" style="background-color: purple;">
-  
-    <!-- Horizontal Titel -->
-    <div class="container" style="background-color: blue; text-align: center; display: flex; align-items: center; justify-content: center; height: 200px;">
-        <h1>Education Journey</h1>
-    </div>
-    
-    <!-- Vertical Card Holders -->
-    <div class="container" style="background-color: red;">
-          <div class="card">
-            <h2>Card Title</h2>
-            <p>This is some example content for the card. You can put whatever you want here.</p>
+    <section class="vertical-container" style="background-color: green;>
+        <!-- Horizontal Title -->
+        <div class="title-container">
+            <h1>Education Journey</h1>
+        </div>
+
+        <!-- Vertical Card Holders -->
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-image">
+                  <img src="../images/download.jpeg" alt="Image">
+              </div>
+              <div class="card-content">
+                  <div class="card-text">
+                      <h2>Singapore Institute of Technology</h2>
+                      <p class="expandable-text">
+                          Bachelor of Engineering with Honours in Information and Communications Technology majoring in Software Engineering
+                      </p>
+                      <button>Read More</button>
+                  </div>
+              </div>
           </div>
 
-          <div class="card">
-            <h2>Card Title</h2>
-            <p>This is some example content for the card. You can put whatever you want here.</p>
+          
+            
+           
+          
           </div>
+        </div>
+    </section>
 
-          <div class="card">
-            <h2>Card Title</h2>
-            <p>This is some example content for the card. You can put whatever you want here.</p>
-          </div>
-    </div>
-
-    </div>
-
-    <div class="container" style="background-color: black;">
-      <p>Fun Area for hobbies and just me images in a carosell</p>
-    </div>
-    
-    
-    <footer>
-      <p>Created By : Jagatees<br>
-      <!-- <a href="mailto:hege@example.com">jagatees.work@gmail.com</a></p> -->
-    </footer>
-
+    <!-- <footer>
+        <p>Created By: Jagatees</p>
+    </footer> -->
 </body>
 </html>

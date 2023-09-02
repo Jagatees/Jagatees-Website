@@ -1,110 +1,147 @@
-/* Navigation Bar */
-ul {
-  list-style-type: none;
+/* Reset some default margin and padding */
+body, ul, li {
   margin: 0;
   padding: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  list-style-type: none;
   overflow: hidden;
   background-color: #333;
   display: flex;
-  justify-content: space-around; /* Center items and add equal spacing */
+  justify-content: space-around;
   align-items: center;
 }
 
-li {
-  float: none; /* Remove float */
-  text-align: center; /* Center text within list items */
+.nav-bar li {
+  text-align: center;
 }
 
-li a {
+.nav-bar li a {
   display: block;
   color: white;
   text-decoration: none;
   padding: 14px 16px;
 }
 
-li a:hover {
+.nav-bar li a:hover {
   background-color: #111;
 }
 
-/* Container Genral */
+/* Container General */
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
 
-  /* CSS for the container div */
-  .container {
-    display: flex;
-    align-items: center; /* Vertically center content */
-    padding: 10px; /* Add padding for spacing */
-  }
+.profile-container img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
 
-  /* CSS for the image */
-  .container img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add space between image and text */
-  }
+.container p {
+  color: white;
+}
 
-  /* CSS for the text */
-  .container p {
-    color: white;
-  }
-
-  /* Contact me */
-
-/* Style for the .contact-me container */
+/* Contact me */
 .contact-me {
   text-align: center;
 }
 
-/* Style for the links within .contact-me */
-.contact-me a {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-}
-
-/* Style for the images within .contact-me */
 .contact-me a img {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
+  width: 100px;
+  height: 100px;
 }
 
+/* Vertical Container */
+.vertical-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
 
-/* Card */
+/* Education Journey */
+.title-container {
+  background-color: blue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
 
- /* Styles for the card container */
- .card {
-  width: 300px;
+.card-container {
+  background-color: red;
+  padding: 20px; /* Add spacing around cards */
+}
+
+/* Updated styles for card */
+.card {
+  display: flex;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex; /* Make the child elements flex items */
-  flex-direction: column; /* Stack child elements vertically */
-  align-items: center; /* Center child elements horizontally */
+  margin-bottom: 20px; /* Add spacing between cards */
 }
 
-/* Styles for card title */
-.card h2 {
+/* Style for the card image */
+.card .card-image {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Style for the card content */
+.card .card-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Style for the expandable text */
+.card .card-text {
+  flex-grow: 1; /* Allow text to expand */
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-text h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Styles for card content */
-.card p {
+.card .card-text p {
   font-size: 16px;
   color: #333;
 }
 
-/* Vetical Container */
-.Vetical-Container{
-  display: flex;
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
-  padding: 10px; /* Add padding for spacing */
-  flex-direction: column; /* Make the children stack vertically */
-  text-align: center; /* Center-align text */
-  margin: 0 auto; /* Center the container horizontally */
+/* Style for the button */
+.card .card-text button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
+
 
 /* Footer */
 footer {
@@ -112,14 +149,4 @@ footer {
   padding: 3px;
   background-color: DarkSalmon;
   color: white;
-}
-
-/* Center the content in the yellow container */
-.yellow-container {
-  background-color: purple;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontally center content */
-  justify-content: center; /* Vertically center content */
-  text-align: center;
 }
