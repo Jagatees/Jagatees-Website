@@ -73,3 +73,28 @@ ul {
     background-color: #f0f0f0; /* Set the background color */
     padding: 20px; /* Add some padding for spacing */
   }
+
+  /* icon */
+
+/* Style the icon container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the icon */
+.icon-container i {
+  font-size: 24px; /* Adjust the icon size as needed */
+  color: #007bff; /* Set the icon color */
+  margin-bottom: 5px; /* Add spacing between icon and <h3> */
+}
+
+/* Style the <h3> heading */
+.icon-container h3 {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove any default margin to align text properly */
+}
