@@ -59,3 +59,27 @@ li a:hover {
   margin: 0 auto; /* Center the container horizontally */
   max-width: 800px; /* Limit container width if needed */
 }
+
+/* Contact me  */
+  /* Style for the .contact-me container */
+  .contact-me {
+    text-align: center;
+  }
+
+  /* Style for the links within .contact-me */
+  .contact-me a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+  }
+
+  /* Style for the span (logo) within .contact-me */
+  .contact-me a span {
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-image: url('images/image.jpg'); /* Replace with the URL of your logo image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px; /* Hide the text content */
+}
