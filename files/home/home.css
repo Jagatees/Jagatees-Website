@@ -105,6 +105,7 @@ a:hover:after {
 
 
 /* Vertical Container */
+
 .vertical-container {
   display: flex;
   align-items: center;
@@ -230,3 +231,6 @@ footer {
       flex: none;
   }
 }
+
+/* work card */
+
