@@ -63,3 +63,24 @@
             <a href="https://leetcode.com/Jagatees/"><span>LeetCode</span></a>
           </div>
         </div>   
+
+
+
+        <!-- About Me Container -->
+    <div class="container">
+        <!-- Contact me -->
+        <div class="contact-me">               
+            <a href="https://www.linkedin.com/in/jagatees/" target="_blank">
+                <img src="../images/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Jagatees" target="_blank">
+                <img src="../images/Octicons-mark-github.svg.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/jagatees_3k/" target="_blank">
+                <img src="../images/modern-badge-logo-instagram-icon_578229-124.avif" alt="Instagram">
+            </a>
+            <a href="https://leetcode.com/Jagatees/" target="_blank">
+                <img src="../images/LeetCode_logo_black.png" alt="LeetCode">
+            </a>
+        </div>
+    </div>

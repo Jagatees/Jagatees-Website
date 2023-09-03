@@ -193,6 +193,39 @@ a:hover:after {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background-color: black;
   color: white;
+}
+
+ /* Apply some basic styling to the container */
+ .container {
+  display: flex;
+  justify-content: space-between; /* To push the image to the right */
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style for the text on the left */
+.text {
+  flex: 1; /* Allow the text to grow and take available space */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the image on the right */
+.image {
+  flex: 1; /* Allow the image to grow and take available space */
+  text-align: center; /* Align the image to the right */
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      text-align: center; /* Center-align elements on smaller screens */
+  }
+
+  .text, .image {
+      flex: none; /* Reset flex to prevent elements from taking up all space */
+  }
 }
