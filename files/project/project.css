@@ -92,6 +92,17 @@ a:hover:after {
 
 /* Card layout */
 
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* Style for the grid */
 .card-grid {
   display: grid;
@@ -109,6 +120,8 @@ a:hover:after {
   overflow: hidden;
   position: relative;
   transition: transform 0.2s;
+  animation: slide-in 0.5s ease-in-out; /* Apply the animation */
+
 }
 
 .card:hover {
@@ -178,3 +191,4 @@ a:hover:after {
 .filter-button:hover {
   background-color: #9a6ff1; /* Change color on hover */
 }
+

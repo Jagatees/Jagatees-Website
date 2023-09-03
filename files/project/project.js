@@ -24,3 +24,4 @@ filterButtons.forEach((button) => {
 
 // Initially, show all cards
 filterCards('all');
+
