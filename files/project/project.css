@@ -1,21 +1,25 @@
-/* Reset styles for margin and padding */
-body, ul, li {
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-image: url('../images/pastel-purple-color-solid-background-1920x1080.png');
+  /* Replace with the path to your image */
   background-size: cover;
+  /* This will make the image cover the entire background */
   background-repeat: no-repeat;
+  /* Prevent the image from repeating */
   margin: 0;
+  /* Remove default margin */
   padding: 0;
-  min-height: 100vh; /* Ensure the body takes up at least the viewport height */
-  display: flex;
-  flex-direction: column; /* To make the footer stay at the bottom */
+  /* Remove default padding */
 }
 
 
+<<<<<<< HEAD
 /* Center the title div and make it bigger */
 header {
   text-align: center;
@@ -42,6 +46,8 @@ footer {
   color: white;
   margin-top: auto; /* Push the footer to the bottom */
 }
+=======
+>>>>>>> parent of 7c7306c (update project page)
 
 
 /* Navigation Bar */
@@ -50,9 +56,8 @@ ul {
   padding: 0;
   list-style: none;
   display: table;
-  width: 100%;
+  width: 600px;
   text-align: center;
-  background-color: #333;
 }
 
 li {
@@ -96,6 +101,7 @@ a:hover:after {
   }
 }
 
+<<<<<<< HEAD
 /* Grid Layout */
 
 
@@ -174,3 +180,91 @@ a:hover:after {
   color: #fff;
 }
 
+=======
+/* title */
+
+/* Center the title div and make it bigger */
+.title {
+  text-align: center;
+  padding: 20px;
+  /* Add some spacing around the title */
+  background-color: #3498db;
+  /* Set the background color to blue (you can change the color code) */
+}
+
+.title h1 {
+  font-size: 36px;
+  /* Adjust the font size as needed */
+}
+
+
+/* Define a grid container */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns with equal width */
+  gap: 20px;
+  /* Gap between grid items */
+}
+
+/* Style for each card */
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for the button */
+.card-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* container */
+
+.container {
+  text-align: center;
+  /* Center the contents horizontally */
+  background-color: #f0f0f0;
+  /* Set the background color */
+  padding: 20px;
+  /* Add some padding for spacing */
+}
+
+/* icon */
+
+/* Style the icon container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the icon */
+.icon-container i {
+  font-size: 24px;
+  /* Adjust the icon size as needed */
+  color: #007bff;
+  /* Set the icon color */
+  margin-bottom: 5px;
+  /* Add spacing between icon and <h3> */
+}
+
+/* Style the <h3> heading */
+.icon-container h3 {
+  font-size: 18px;
+  /* Adjust the font size as needed */
+  color: #333;
+  /* Set the text color */
+  margin: 0;
+  /* Remove any default margin to align text properly */
+}
+>>>>>>> parent of 7c7306c (update project page)
