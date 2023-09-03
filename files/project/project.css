@@ -20,7 +20,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background-color: #3498db;
+  /* background-color: #3498db; */
 }
 
 .title h1 {
@@ -74,7 +74,7 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #9a6ff1;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -162,4 +162,19 @@ a:hover:after {
   display: flex;
   justify-content: center; /* Center horizontally */
   margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Style for the filter buttons */
+.filter-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px; /* Adjust the padding to make the button bigger */
+  border: none;
+  border-radius: 20px; /* Add rounded edges */
+  margin: 0 10px; /* Add margin between the buttons */
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #9a6ff1; /* Change color on hover */
 }
