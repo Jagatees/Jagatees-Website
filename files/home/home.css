@@ -1,24 +1,16 @@
 /* Reset some default margin and padding */
-body,
-ul,
-li {
+body, ul, li {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-image: url('../images/pastel-purple-color-solid-background-1920x1080.png');
-  /* Replace with the path to your image */
   background-size: cover;
-  /* This will make the image cover the entire background */
   background-repeat: no-repeat;
-  /* Prevent the image from repeating */
   margin: 0;
-  /* Remove default margin */
   padding: 0;
-  /* Remove default padding */
 }
-
 
 /* Navigation Bar */
 ul {
@@ -26,8 +18,9 @@ ul {
   padding: 0;
   list-style: none;
   display: table;
-  width: 600px;
+  width: 100%;
   text-align: center;
+  background-color: #333;
 }
 
 li {
@@ -71,7 +64,6 @@ a:hover:after {
   }
 }
 
-
 /* Container General */
 .container {
   display: flex;
@@ -79,7 +71,7 @@ a:hover:after {
   padding: 10px;
 }
 
-.profile-container img {
+.container img {
   max-width: 100%;
   height: auto;
   margin-right: 20px;
@@ -87,16 +79,6 @@ a:hover:after {
 
 .container p {
   color: white;
-}
-
-/* Contact me */
-.contact-me {
-  text-align: center;
-}
-
-.contact-me a img {
-  width: 100px;
-  height: 100px;
 }
 
 /* Vertical Container */
@@ -112,7 +94,6 @@ a:hover:after {
 
 /* Education Journey */
 .title-container {
-  /* background-color: blue; */
   text-align: center;
   display: flex;
   align-items: center;
@@ -121,9 +102,7 @@ a:hover:after {
 }
 
 .card-container {
-  /* background-color: red; */
   padding: 20px;
-  /* Add spacing around cards */
 }
 
 /* Updated styles for card */
@@ -133,7 +112,6 @@ a:hover:after {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  /* Add spacing between cards */
 }
 
 /* Style for the card image */
@@ -164,7 +142,6 @@ a:hover:after {
 /* Style for the expandable text */
 .card .card-text {
   flex-grow: 1;
-  /* Allow text to expand */
   display: flex;
   flex-direction: column;
 }
@@ -188,7 +165,6 @@ a:hover:after {
   cursor: pointer;
 }
 
-
 /* Footer */
 footer {
   text-align: center;
@@ -197,35 +173,35 @@ footer {
   color: white;
 }
 
- /* Apply some basic styling to the container */
- .container {
+/* Apply some basic styling to the container */
+.container {
   display: flex;
-  justify-content: space-between; /* To push the image to the right */
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
 /* Style for the text on the left */
 .text {
-  flex: 1; /* Allow the text to grow and take available space */
+  flex: 1;
   padding: 10px;
   text-align: center;
 }
 
 /* Style for the image on the right */
 .image {
-  flex: 1; /* Allow the image to grow and take available space */
-  text-align: center; /* Align the image to the right */
+  flex: 1;
+  text-align: center;
 }
 
 /* Add some responsiveness */
 @media (max-width: 768px) {
   .container {
-      flex-direction: column; /* Stack elements vertically on smaller screens */
-      text-align: center; /* Center-align elements on smaller screens */
+      flex-direction: column;
+      text-align: center;
   }
 
   .text, .image {
-      flex: none; /* Reset flex to prevent elements from taking up all space */
+      flex: none;
   }
 }
