@@ -1,19 +1,26 @@
-// JavaScript to handle filter tab functionality
-const filterTabs = document.querySelectorAll('.filter-tab');
-const filterCards = document.querySelectorAll('.filter-card');
+// Function to filter cards based on the selected category
+function filterCards(category) {
+  const cards = document.querySelectorAll('.card');
 
-filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const category = tab.getAttribute('data-category');
-        filterTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+  cards.forEach((card) => {
+    const tags = card.getAttribute('data-tags').split(' ');
+    if (category === 'all' || tags.includes(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
 
-        filterCards.forEach(card => {
-            if (category === 'all' || card.getAttribute('data-category') === category) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
+// Add event listeners to filter buttons
+const filterButtons = document.querySelectorAll('.filter-button');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-filter');
+    filterCards(category);
+  });
 });
+
+// Initially, show all cards
+filterCards('all');

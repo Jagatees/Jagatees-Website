@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- Link to home.css  -->
-  <link rel="stylesheet" href="../project/project.css" />
-  <script src="../project/project.js"></script>
   <title>Project</title>
-  <!-- Navigation Bar -->
-  <ul class="nav-bar">
-    <li><a href="../home/home.html">Home</a></li>
-    <li><a href="../project/project.html">Project</a></li>
-  </ul>
+  <link rel="stylesheet" href="../project/project.css" />
 </head>
-
 <body>
 
  <!-- Navigation Bar -->
  <ul class="nav-bar">
-  <li><a class="nav-link" href="../home/home.html">About Me</a></li>
-  <li><a class="nav-link" href="../project/project.html">Project</a></li>
+  <li><a href="../home/home.html">About Me</a></li>
+  <li><a href="../project/project.html">Project</a></li>
 </ul>
 
-  <div class="container">
-    <div class="filter">
-      <button onclick="filterCards('all')">All</button>
-      <button onclick="filterCards('Game_Development')">Game</button>
-      <button onclick="filterCards('Software_Development')">Software</button>
+  <header>
+    <div class="title">
+      <h1>Project</h1>
     </div>
-  </div>
+  </header>
 
   <main>
-    
-    <div class="filter-tabs">
-      <div class="filter-tab active" data-category="all">All</div>
-      <div class="filter-tab" data-category="A">Category A</div>
-      <div class="filter-tab" data-category="B">Category B</div>
+    <div class="filter">
+      <button class="filter-button" data-filter="all">All</button>
+      <button class="filter-button" data-filter="Game_Development">Game</button>
+      <button class="filter-button" data-filter="Software_Development">Software</button>
     </div>
-  </div>
-
-    <div class="filter-container">
-        <!-- Image-only cards -->
-        <div class="filter-card" data-category="A" data-title="Title for Image 1">
-          <a href="../home/home.html" target="_blank"> 
-            <img src="../images/LeetCode_logo_black.png" alt="Image 1">
-          </a>
-        </div>
-    </div>
+  
+    <div class="card-grid">
+      <div class="card" data-tags="Software_Development">
+        <a href="../project/project_text/Web_Scrapper_SIT_Timetable.html">
+          <div class="card-image">
+            <img src="../images/image.jpg" alt="Project Image">
+          </div>
+          <div class="card-title">
+            <h2>Web Scrapper SIT Timetable</h2>
+          </div>
+        </a>
+      </div>
     
   </main>
 
@@ -58,5 +47,4 @@
   
   <script src="../project/project.js"></script>
 </body>
-
 </html>
