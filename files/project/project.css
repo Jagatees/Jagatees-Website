@@ -156,3 +156,10 @@ a:hover:after {
 .card-button {
   display: none;
 }
+
+/* Add this CSS to center the filter container */
+.filter-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
