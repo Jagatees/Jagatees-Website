@@ -99,6 +99,8 @@ a:hover:after {
   align-items: center;
   justify-content: center;
   height: 200px;
+  width: 100%;
+  background-color: #333;
 }
 
 .card-container {
@@ -169,7 +171,7 @@ a:hover:after {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: black;
+  background-color: #333;
   color: white;
 }
 
