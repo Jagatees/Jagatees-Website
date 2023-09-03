@@ -1,80 +1,134 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../images/pastel-purple-color-solid-background-1920x1080.png');
+  /* Replace with the path to your image */
+  background-size: cover;
+  /* This will make the image cover the entire background */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+}
+
+
+
+
 /* Navigation Bar */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: space-around; /* Center items and add equal spacing */
-    align-items: center;
-  }
-  
-  li {
-    float: none; /* Remove float */
-    text-align: center; /* Center text within list items */
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 16px;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+  margin: 0px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
 
-  /* title */
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
 
-  /* Center the title div and make it bigger */
-  .title {
-    text-align: center;
-    padding: 20px; /* Add some spacing around the title */
-    background-color: #3498db; /* Set the background color to blue (you can change the color code) */
-    }
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
 
-  .title h1 {
-    font-size: 36px; /* Adjust the font size as needed */
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
   }
+}
+
+/* title */
+
+/* Center the title div and make it bigger */
+.title {
+  text-align: center;
+  padding: 20px;
+  /* Add some spacing around the title */
+  background-color: #3498db;
+  /* Set the background color to blue (you can change the color code) */
+}
+
+.title h1 {
+  font-size: 36px;
+  /* Adjust the font size as needed */
+}
 
 
- /* Define a grid container */
- .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-    gap: 20px; /* Gap between grid items */
+/* Define a grid container */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns with equal width */
+  gap: 20px;
+  /* Gap between grid items */
 }
 
 /* Style for each card */
 .card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Style for the button */
 .card-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* container */
 
 .container {
-    text-align: center; /* Center the contents horizontally */
-    background-color: #f0f0f0; /* Set the background color */
-    padding: 20px; /* Add some padding for spacing */
-  }
+  text-align: center;
+  /* Center the contents horizontally */
+  background-color: #f0f0f0;
+  /* Set the background color */
+  padding: 20px;
+  /* Add some padding for spacing */
+}
 
-  /* icon */
+/* icon */
 
 /* Style the icon container */
 .icon-container {
@@ -87,14 +141,20 @@ ul {
 
 /* Style the icon */
 .icon-container i {
-  font-size: 24px; /* Adjust the icon size as needed */
-  color: #007bff; /* Set the icon color */
-  margin-bottom: 5px; /* Add spacing between icon and <h3> */
+  font-size: 24px;
+  /* Adjust the icon size as needed */
+  color: #007bff;
+  /* Set the icon color */
+  margin-bottom: 5px;
+  /* Add spacing between icon and <h3> */
 }
 
 /* Style the <h3> heading */
 .icon-container h3 {
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #333; /* Set the text color */
-  margin: 0; /* Remove any default margin to align text properly */
+  font-size: 18px;
+  /* Adjust the font size as needed */
+  color: #333;
+  /* Set the text color */
+  margin: 0;
+  /* Remove any default margin to align text properly */
 }

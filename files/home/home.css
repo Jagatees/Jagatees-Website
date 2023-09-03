@@ -1,42 +1,76 @@
 /* Reset some default margin and padding */
-body, ul, li {
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: url('../images/pastel-purple-color-solid-background-1920x1080.png'); /* Replace with the path to your image */
-  background-size: cover; /* This will make the image cover the entire background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  background-image: url('../images/pastel-purple-color-solid-background-1920x1080.png');
+  /* Replace with the path to your image */
+  background-size: cover;
+  /* This will make the image cover the entire background */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
 }
 
 
 /* Navigation Bar */
-.nav-bar {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-bar li {
+ul {
+  margin: 0px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
   text-align: center;
 }
 
-.nav-bar li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 14px 16px;
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
 }
 
-.nav-bar li a:hover {
-  background-color: #111;
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
 }
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
 
 /* Container General */
 .container {
@@ -88,7 +122,8 @@ body {
 
 .card-container {
   /* background-color: red; */
-  padding: 20px; /* Add spacing around cards */
+  padding: 20px;
+  /* Add spacing around cards */
 }
 
 /* Updated styles for card */
@@ -97,7 +132,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Add spacing between cards */
+  margin-bottom: 20px;
+  /* Add spacing between cards */
 }
 
 /* Style for the card image */
@@ -127,7 +163,8 @@ body {
 
 /* Style for the expandable text */
 .card .card-text {
-  flex-grow: 1; /* Allow text to expand */
+  flex-grow: 1;
+  /* Allow text to expand */
   display: flex;
   flex-direction: column;
 }
@@ -159,5 +196,3 @@ footer {
   background-color: DarkSalmon;
   color: white;
 }
-
-
