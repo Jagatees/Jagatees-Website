@@ -1,6 +1,7 @@
 body {
     font: 500 14px "Source Sans Pro";
     color: #555353;
+    background-color: rgb(214, 173, 255);
 }
 h1, h2, h3, h4 {
     color: #373737;
@@ -11,7 +12,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0;
+    margin: 0px 0;
 }
 h2 {
     font-size: 1.8em;
@@ -120,3 +121,56 @@ b {
         padding-bottom: 60%;
    }
 }
+
+/* Nav Bar */
+/* Navigation Bar */
+ul {
+    margin: 0px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+  }
+  
+  li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+  }
+  
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #9a6ff1;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
