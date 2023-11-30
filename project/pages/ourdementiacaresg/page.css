@@ -101,10 +101,10 @@ article {
 }
 
 .blog-video {
-    width: 60%;
+    width: 30%;
     height: 0;
     margin: 50px auto 60px;
-    padding-bottom: 35%;
+    padding-bottom: 20%;
     background-size: cover;
     position: relative;
 }
