@@ -232,5 +232,29 @@ footer {
   }
 }
 
-/* work card */
+/* Work Experience Card */
+#work-experience .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
 
+#work-experience .card {
+  width: calc(33.333% - 20px);
+  /* ...other styles... */
+}
+
+@media (max-width: 768px) {
+  #work-experience .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  #work-experience .card {
+    width: 100%;
+  }
+}
