@@ -54,7 +54,7 @@ p {
     width: 100%;
     height: 0;
     padding-bottom: 30%;
-    background-image: url('../../../image_project/dem.png'); /* Replace with the actual path to your image */
+    background-image: url('../../../assets/image_project/dem.png'); /* Replace with the actual path to your image */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 70%;
@@ -99,6 +99,17 @@ article {
     color: #888;
     left: 4%;
 }
+
+.blog-video {
+    width: 60%;
+    height: 0;
+    margin: 50px auto 60px;
+    padding-bottom: 35%;
+    background-size: cover;
+    position: relative;
+}
+
+
 b {
     font-weight: bold;
 }
