@@ -101,14 +101,12 @@ article {
 }
 
 .blog-video {
-    width: 30%;
+    width: 100%; /* This will make the video take the full width of its container */
     height: 0;
-    margin: 50px auto 60px;
-    padding-bottom: 20%;
-    background-size: cover;
+    padding-bottom: 56.25%; /* This percentage gives you a 16:9 aspect ratio */
+    padding-left: 15%;
     position: relative;
 }
-
 
 b {
     font-weight: bold;
