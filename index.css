@@ -1,6 +1,8 @@
 body, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+
 }
 
 body {
@@ -9,6 +11,8 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+
 }
 
 /* Navigation Bar */
@@ -244,8 +248,8 @@ footer {
 }
 
 #work-experience .card {
-  width: calc(33.333% - 20px);
-  /* ...other styles... */
+  width: 48%; /* Adjusts the card width to fit 2 cards per row */
+    margin-bottom: 20px; /* Adds space between rows */
 }
 
 @media (max-width: 768px) {
